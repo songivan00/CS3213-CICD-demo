@@ -25,7 +25,7 @@ jobs:
   
   # # Demo: This job checks whether all .py files in the root directory
   # # begins with CS3213
-  checkprefix:
+  checkpreix:
     name: Check Prefix
     runs-on: ubuntu-latest
     steps:
@@ -39,7 +39,7 @@ jobs:
         run: |
           if ls *.py 2>/dev/null | grep -qv '^CS3213'; then\
             echo "All .py files should begin with CS3213"
-            exit 1
+            exit 1f
           fi
 
   # checkdocumentation:
